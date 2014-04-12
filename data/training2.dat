@@ -1,0 +1,35 @@
+//Sinking the Rising the Sun
+//Date: April 2, 2008
+//training2.dat
+
+//Environmental data
+//$E, seastate, time (0=noon, 720 = mid, 1440 = noon), mission over code, param1, param2
+$E, 2, 720, 0, 3, 15 //sink 3 ships in 10 minutes
+
+
+//USS Tautog 
+//($S)sub data, mission#, vessel type, x (lon), y (lat), speed, heading, depth,
+// num fwd torp, num aft torp, damage percentage, damage status, distance
+//****************************************************************
+$S, 0, 0, 17873418, 5263947, 4, 0, 60, 16, 8, 0, 0, 0
+
+//($O) Single objective description
+//($M) submarine orders
+//****************************************************************
+$O, Destroy three moving targets.
+$M, Conduct live torpedo operations against three
+$M, ships traveling east.
+$M, 
+$M, Successful completion of Training Mission 2 requires
+$M, all three ships to be sunk in 15 minutes.
+$M, 
+$M, Good luck!
+
+//($T)target data, vessel type, x (lon), y (lat), 
+//  speed, heading, depth, dest x, dest y,
+//  damage percentage, damage status
+//****************************************************************
+$T, 3, 17871418, 5265947, 8, 90, 22, 17873418, 5264447, 0, 0, 0
+$T, 3, 17869418, 5264947, 8, 90, 22, 17873418, 5264447, 0, 0, 0
+$T, 3, 17867418, 5263947, 8, 90, 22, 17873418, 5264447, 0, 0, 0
+

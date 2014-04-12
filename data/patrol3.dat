@@ -1,0 +1,36 @@
+//Sinking the Rising the Sun
+//Date: May 1, 2008
+//patrol3.dat
+
+//Environmental data
+//$E, seastate, time (0=noon, 720 = mid, 1440 = noon)
+$E, 7, 720, 0, 3, 20 //sink 3 ships in 20 minutes
+
+//USS Tautog 
+//($S)sub data, mission#, vessel type, x (lon), y (lat), speed, heading, depth,
+// num fwd torp, num aft torp, damage percentage, damage status, distance
+//****************************************************************
+$S, 0, 0, 17875418, 5261947, 22, 325, 25, 16, 8, 0, 0, 0
+
+//($O) Single objective description
+//($M) submarine orders
+//****************************************************************
+$O,War Patrol 11
+$M,Destroy enemy ships.  Return to port
+$M,after sinking three ships. Be careful!
+$M,Japanese destroyers have sunk several US subs.
+$M,    
+$M,Good luck!
+
+//($T)target data, vessel type, x (lon), y (lat), 
+//  speed, heading, depth, dest x, dest y,
+//  damage percentage, damage status, distance traveled
+//****************************************************************
+$T, 4, 17873418, 5265347, 0, 160, 15, 17873418, 5264447, 0, 0, 0
+$T, 2, 17873418, 5262947, 0, 130, 15, 17873418, 5264447, 0, 0, 0
+$T, 3, 17872418, 5263947, 0, 130, 15, 17873418, 5264447, 0, 0, 0
+$T, 4, 17874418, 5263947, 0, 180, 15, 17873418, 5264447, 0, 0, 0
+$T, 3, 17872418, 5264947, 0, 120, 15, 17873418, 5264447, 0, 0, 0
+$T, 2, 17874418, 5264947, 0, 180, 15, 17873418, 5264447, 0, 0, 0
+$T, 3, 17872418, 5262947, 0, 130, 15, 17873418, 5264447, 0, 0, 0
+$T, 4, 17874418, 5262947, 0, 130, 15, 17873418, 5264447, 0, 0, 0
